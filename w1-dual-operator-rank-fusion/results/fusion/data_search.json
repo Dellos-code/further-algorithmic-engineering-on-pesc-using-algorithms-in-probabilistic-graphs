@@ -1,0 +1,51 @@
+[
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "karate_club_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.karate_club_graph.html"
+  },
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "les_miserables_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.les_miserables_graph.html"
+  },
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "davis_southern_women_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.davis_southern_women_graph.html"
+  },
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "florentine_families_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.florentine_families_graph.html"
+  },
+  {
+    "licence": "varies by dataset",
+    "outcome": "not acquired in baseline environment",
+    "resource": "public download search",
+    "source": "SNAP",
+    "url": "https://snap.stanford.edu/data/"
+  },
+  {
+    "licence": "varies by dataset",
+    "outcome": "not acquired in baseline environment",
+    "resource": "public download search",
+    "source": "KONECT",
+    "url": "https://konect.cc/networks/"
+  },
+  {
+    "licence": "varies by dataset",
+    "outcome": "not acquired in baseline environment",
+    "resource": "public download search",
+    "source": "Netzschleuder",
+    "url": "https://networks.skewed.de/"
+  }
+]
