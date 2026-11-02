@@ -1,0 +1,1320 @@
+{
+  "c0": 0.2,
+  "covariate": "pbar_E",
+  "family": "hard_gate",
+  "fit_panels": [
+    "dev",
+    "test3",
+    "fit500"
+  ],
+  "hard_gate_tau": 0.5484655150708414,
+  "hold_panels": [
+    "scale3",
+    "big2",
+    "oof",
+    "real_hold"
+  ],
+  "hypotheses": [
+    "H1: F_v2 > W1",
+    "H2: F_v2 > F_c0_v2",
+    "H3: F_v2 > MP2"
+  ],
+  "member_M": "w1.diffusion.knz_mp(inst, iters=2)[0]",
+  "member_W": "w1.algorithm.w1_scores(inst, w1.algorithm.W1)",
+  "parameters": {
+    "tau": 0.5484655150708414
+  },
+  "selection": {
+    "best": {
+      "covariate": "kappa_E",
+      "cv_mean": 0.9217520807166371,
+      "cv_se": 0.02103760283212705,
+      "family": "hard_gate",
+      "fit_score": 0.9224400230209354,
+      "parameters": {
+        "tau": 0.817618009458851
+      },
+      "parameters_count": 1
+    },
+    "cv_candidates": [
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9122918489906946,
+        "cv_se": 0.02085922225362753,
+        "family": "hard_gate",
+        "fit_score": 0.9176504838829146,
+        "parameters": {
+          "tau": 0.5484655150708414
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9194243878154728,
+        "cv_se": 0.020512055584956824,
+        "family": "clipped_linear",
+        "fit_score": 0.9205070636615326,
+        "parameters": {
+          "a": 1.256421220882075,
+          "b": -0.24846946261912403,
+          "scale": 0.8019497817658363,
+          "scale_min": 0.032419401709917486
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9201317631442119,
+        "cv_se": 0.020483715943092635,
+        "family": "logistic",
+        "fit_score": 0.92069674289275,
+        "parameters": {
+          "a": 5.508054403472434,
+          "scale": 0.8019497817658363,
+          "scale_min": 0.032419401709917486,
+          "tau": 0.5492362600365974
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9155620553298665,
+        "cv_se": 0.021447380400454307,
+        "family": "isotonic",
+        "fit_score": 0.9170285243181522,
+        "parameters": {
+          "breaks": [
+            0.10169318725249221,
+            0.22145594152651188,
+            0.39187238908926647,
+            0.6141328873251202
+          ],
+          "values": [
+            0.075,
+            0.075,
+            0.375,
+            0.775,
+            0.775
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9179944250034331,
+        "cv_se": 0.02184871270411327,
+        "family": "spline",
+        "fit_score": 0.9201960889849231,
+        "parameters": {
+          "coefficients": [
+            1.3651442877560789,
+            -1.8301579306039433,
+            1.4560856898608594,
+            -0.09707584637866896
+          ],
+          "scale": 0.8019497817658363,
+          "scale_min": 0.032419401709917486
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9119158325874691,
+        "cv_se": 0.021764089295516792,
+        "family": "hard_gate",
+        "fit_score": 0.9170436819578623,
+        "parameters": {
+          "tau": 1.1123552384561686
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9139303628914774,
+        "cv_se": 0.02117437240386387,
+        "family": "clipped_linear",
+        "fit_score": 0.9149428894058433,
+        "parameters": {
+          "a": 8.0,
+          "b": 0.13134330424536653,
+          "scale": 74.34687594280834,
+          "scale_min": 0.06658259863912358
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9055845698701405,
+        "cv_se": 0.02108295952469966,
+        "family": "logistic",
+        "fit_score": 0.9068065509638991,
+        "parameters": {
+          "a": 12.0,
+          "scale": 74.34687594280834,
+          "scale_min": 0.06658259863912358,
+          "tau": 8.725322645901796
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9175718656733708,
+        "cv_se": 0.022148032004670467,
+        "family": "isotonic",
+        "fit_score": 0.9170599514699772,
+        "parameters": {
+          "breaks": [
+            0.3959680354983205,
+            1.0252605730405675,
+            1.9632530798705912,
+            3.2923952812980595
+          ],
+          "values": [
+            0.075,
+            0.075,
+            0.575,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9040169927980037,
+        "cv_se": 0.0202922433847683,
+        "family": "spline",
+        "fit_score": 0.9039483305530298,
+        "parameters": {
+          "coefficients": [
+            0.0006532922229575739,
+            0.0010009943326680488,
+            0.00041448388390907624,
+            0.199995119812524
+          ],
+          "scale": 74.34687594280834,
+          "scale_min": 0.06658259863912358
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9177535019904182,
+        "cv_se": 0.020659418723261148,
+        "family": "hard_gate",
+        "fit_score": 0.9191982415768503,
+        "parameters": {
+          "tau": 0.8699842055311631
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9214230876269104,
+        "cv_se": 0.01960482078037278,
+        "family": "clipped_linear",
+        "fit_score": 0.9210224451385493,
+        "parameters": {
+          "a": 2.6568609823461116,
+          "b": -1.7948792464105534,
+          "scale": 0.9348742085227351,
+          "scale_min": 0.06506487007771156
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9210960176897645,
+        "cv_se": 0.01959712986068496,
+        "family": "logistic",
+        "fit_score": 0.9208675094763593,
+        "parameters": {
+          "a": 10.620489938508083,
+          "scale": 0.9348742085227351,
+          "scale_min": 0.06506487007771156,
+          "tau": 0.8683897120128646
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9169714382249653,
+        "cv_se": 0.0211875151821895,
+        "family": "isotonic",
+        "fit_score": 0.9190364102316432,
+        "parameters": {
+          "breaks": [
+            0.2955302698045323,
+            0.5626859701488002,
+            0.8047714148918856,
+            0.9537378385226184
+          ],
+          "values": [
+            0.075,
+            0.075,
+            0.425,
+            0.8,
+            0.925
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9208727516750947,
+        "cv_se": 0.01964510210048363,
+        "family": "spline",
+        "fit_score": 0.9208165964988501,
+        "parameters": {
+          "coefficients": [
+            -5.826754843710025,
+            6.998594773590916,
+            3.382463326911286,
+            -3.779380509658985
+          ],
+          "scale": 0.9348742085227351,
+          "scale_min": 0.06506487007771156
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.9177407202174221,
+        "cv_se": 0.022029113860935742,
+        "family": "hard_gate",
+        "fit_score": 0.9178333737244334,
+        "parameters": {
+          "tau": 2.217151269794075
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.909944174620363,
+        "cv_se": 0.022039798287838693,
+        "family": "clipped_linear",
+        "fit_score": 0.9112813329985892,
+        "parameters": {
+          "a": 8.0,
+          "b": -0.07685673366441194,
+          "scale": 126.27030045891371,
+          "scale_min": -3.253213742976125
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.9050984904812158,
+        "cv_se": 0.021145058728123833,
+        "family": "logistic",
+        "fit_score": 0.9059719120574782,
+        "parameters": {
+          "a": 12.0,
+          "scale": 126.27030045891371,
+          "scale_min": -3.253213742976125,
+          "tau": 14.68956755128022
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.9113340180642795,
+        "cv_se": 0.022362089391550755,
+        "family": "isotonic",
+        "fit_score": 0.911637262733338,
+        "parameters": {
+          "breaks": [
+            0.2150750930770552,
+            0.8630457900129571,
+            2.1366096533105945,
+            5.060226576453905
+          ],
+          "values": [
+            0.1,
+            0.1,
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.905964722857407,
+        "cv_se": 0.019950697494025282,
+        "family": "spline",
+        "fit_score": 0.9039482904449757,
+        "parameters": {
+          "coefficients": [
+            0.0006532922229575739,
+            0.0010009943326680488,
+            0.00041448388390907624,
+            0.199995119812524
+          ],
+          "scale": 126.27030045891371,
+          "scale_min": -3.253213742976125
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.912423514276489,
+        "cv_se": 0.022457974479467572,
+        "family": "hard_gate",
+        "fit_score": 0.9152629678851361,
+        "parameters": {
+          "tau": 3.4650197140843186
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.9091709001509672,
+        "cv_se": 0.021702119853843307,
+        "family": "clipped_linear",
+        "fit_score": 0.9101569534057857,
+        "parameters": {
+          "a": 8.0,
+          "b": 0.1636992154904708,
+          "scale": 244.2188834651854,
+          "scale_min": 0.0
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.9041381074651044,
+        "cv_se": 0.020721947335780193,
+        "family": "logistic",
+        "fit_score": 0.9053332757156589,
+        "parameters": {
+          "a": 11.165464505780626,
+          "scale": 244.2188834651854,
+          "scale_min": 0.0,
+          "tau": 30.322003665451284
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.91401258880208,
+        "cv_se": 0.02242714421521716,
+        "family": "isotonic",
+        "fit_score": 0.9134781452121925,
+        "parameters": {
+          "breaks": [
+            0.3270545787535592,
+            1.3183352916409241,
+            2.977693765519531,
+            6.512638798766991
+          ],
+          "values": [
+            0.1,
+            0.1,
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.9059641171969114,
+        "cv_se": 0.01995067959497081,
+        "family": "spline",
+        "fit_score": 0.9039480910778476,
+        "parameters": {
+          "coefficients": [
+            0.0006532922229575739,
+            0.0010009943326680488,
+            0.00041448388390907624,
+            0.199995119812524
+          ],
+          "scale": 244.2188834651854,
+          "scale_min": 0.0
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9106288452213158,
+        "cv_se": 0.021271747133793272,
+        "family": "hard_gate",
+        "fit_score": 0.9177212721207958,
+        "parameters": {
+          "tau": 0.7139428160380651
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9185795458609647,
+        "cv_se": 0.020381275924814934,
+        "family": "clipped_linear",
+        "fit_score": 0.9195743396596562,
+        "parameters": {
+          "a": 2.1188211857018713,
+          "b": -1.204581634187046,
+          "scale": 0.9999520088723111,
+          "scale_min": 0.0
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9187588092196811,
+        "cv_se": 0.020231375665782467,
+        "family": "logistic",
+        "fit_score": 0.9195294755015729,
+        "parameters": {
+          "a": 8.958284079201839,
+          "scale": 0.9999520088723111,
+          "scale_min": 0.0,
+          "tau": 0.7953818005620537
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9157907178600578,
+        "cv_se": 0.022319515496862435,
+        "family": "isotonic",
+        "fit_score": 0.9168253470249106,
+        "parameters": {
+          "breaks": [
+            6.241119713759355e-15,
+            9.190681524659413e-13,
+            0.6135523641254876,
+            0.9353599120665318
+          ],
+          "values": [
+            0.1,
+            0.1,
+            0.375,
+            0.825,
+            0.975
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9168366411368335,
+        "cv_se": 0.02006063082847171,
+        "family": "spline",
+        "fit_score": 0.9203038355367329,
+        "parameters": {
+          "coefficients": [
+            1.1541414539499306,
+            -1.2627720207937565,
+            0.8836523002790566,
+            0.07500185074850442
+          ],
+          "scale": 0.9999520088723111,
+          "scale_min": 0.0
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9217520807166371,
+        "cv_se": 0.02103760283212705,
+        "family": "hard_gate",
+        "fit_score": 0.9224400230209354,
+        "parameters": {
+          "tau": 0.817618009458851
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.912317920432575,
+        "cv_se": 0.021459378981887267,
+        "family": "clipped_linear",
+        "fit_score": 0.9129441078159468,
+        "parameters": {
+          "a": 8.0,
+          "b": 0.17052378678925792,
+          "scale": 99.79221638766235,
+          "scale_min": -0.08762751548177215
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9071668577923224,
+        "cv_se": 0.020819569895847524,
+        "family": "logistic",
+        "fit_score": 0.9057368585011747,
+        "parameters": {
+          "a": 11.172715610196525,
+          "scale": 99.79221638766235,
+          "scale_min": -0.08762751548177215,
+          "tau": 12.303979197417666
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9188920144799374,
+        "cv_se": 0.021435044284550616,
+        "family": "isotonic",
+        "fit_score": 0.9179433190314101,
+        "parameters": {
+          "breaks": [
+            -0.028353897128162758,
+            0.023785170018775486,
+            0.5704915884453309,
+            2.060909196264628
+          ],
+          "values": [
+            0.025,
+            0.1,
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9060654380810885,
+        "cv_se": 0.01996193557971124,
+        "family": "spline",
+        "fit_score": 0.9039493053479758,
+        "parameters": {
+          "coefficients": [
+            0.00040338056462981925,
+            0.0010182219044764101,
+            0.0012024843723420788,
+            0.19999071061705498
+          ],
+          "scale": 99.79221638766235,
+          "scale_min": -0.08762751548177215
+        },
+        "parameters_count": 3
+      }
+    ],
+    "one_se_eligible": [
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9122918489906946,
+        "cv_se": 0.02085922225362753,
+        "family": "hard_gate",
+        "fit_score": 0.9176504838829146,
+        "parameters": {
+          "tau": 0.5484655150708414
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9217520807166371,
+        "cv_se": 0.02103760283212705,
+        "family": "hard_gate",
+        "fit_score": 0.9224400230209354,
+        "parameters": {
+          "tau": 0.817618009458851
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9177535019904182,
+        "cv_se": 0.020659418723261148,
+        "family": "hard_gate",
+        "fit_score": 0.9191982415768503,
+        "parameters": {
+          "tau": 0.8699842055311631
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.9177407202174221,
+        "cv_se": 0.022029113860935742,
+        "family": "hard_gate",
+        "fit_score": 0.9178333737244334,
+        "parameters": {
+          "tau": 2.217151269794075
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9106288452213158,
+        "cv_se": 0.021271747133793272,
+        "family": "hard_gate",
+        "fit_score": 0.9177212721207958,
+        "parameters": {
+          "tau": 0.7139428160380651
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9119158325874691,
+        "cv_se": 0.021764089295516792,
+        "family": "hard_gate",
+        "fit_score": 0.9170436819578623,
+        "parameters": {
+          "tau": 1.1123552384561686
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.912423514276489,
+        "cv_se": 0.022457974479467572,
+        "family": "hard_gate",
+        "fit_score": 0.9152629678851361,
+        "parameters": {
+          "tau": 3.4650197140843186
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.905969191701039,
+        "cv_se": 0.019949969219891586,
+        "family": "constant",
+        "fit_score": 0.9039476616095428,
+        "parameters": {
+          "c": 0.2
+        },
+        "parameters_count": 1
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9155620553298665,
+        "cv_se": 0.021447380400454307,
+        "family": "isotonic",
+        "fit_score": 0.9170285243181522,
+        "parameters": {
+          "breaks": [
+            0.10169318725249221,
+            0.22145594152651188,
+            0.39187238908926647,
+            0.6141328873251202
+          ],
+          "values": [
+            0.075,
+            0.075,
+            0.375,
+            0.775,
+            0.775
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9169714382249653,
+        "cv_se": 0.0211875151821895,
+        "family": "isotonic",
+        "fit_score": 0.9190364102316432,
+        "parameters": {
+          "breaks": [
+            0.2955302698045323,
+            0.5626859701488002,
+            0.8047714148918856,
+            0.9537378385226184
+          ],
+          "values": [
+            0.075,
+            0.075,
+            0.425,
+            0.8,
+            0.925
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9188920144799374,
+        "cv_se": 0.021435044284550616,
+        "family": "isotonic",
+        "fit_score": 0.9179433190314101,
+        "parameters": {
+          "breaks": [
+            -0.028353897128162758,
+            0.023785170018775486,
+            0.5704915884453309,
+            2.060909196264628
+          ],
+          "values": [
+            0.025,
+            0.1,
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9175718656733708,
+        "cv_se": 0.022148032004670467,
+        "family": "isotonic",
+        "fit_score": 0.9170599514699772,
+        "parameters": {
+          "breaks": [
+            0.3959680354983205,
+            1.0252605730405675,
+            1.9632530798705912,
+            3.2923952812980595
+          ],
+          "values": [
+            0.075,
+            0.075,
+            0.575,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9157907178600578,
+        "cv_se": 0.022319515496862435,
+        "family": "isotonic",
+        "fit_score": 0.9168253470249106,
+        "parameters": {
+          "breaks": [
+            6.241119713759355e-15,
+            9.190681524659413e-13,
+            0.6135523641254876,
+            0.9353599120665318
+          ],
+          "values": [
+            0.1,
+            0.1,
+            0.375,
+            0.825,
+            0.975
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.91401258880208,
+        "cv_se": 0.02242714421521716,
+        "family": "isotonic",
+        "fit_score": 0.9134781452121925,
+        "parameters": {
+          "breaks": [
+            0.3270545787535592,
+            1.3183352916409241,
+            2.977693765519531,
+            6.512638798766991
+          ],
+          "values": [
+            0.1,
+            0.1,
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.9113340180642795,
+        "cv_se": 0.022362089391550755,
+        "family": "isotonic",
+        "fit_score": 0.911637262733338,
+        "parameters": {
+          "breaks": [
+            0.2150750930770552,
+            0.8630457900129571,
+            2.1366096533105945,
+            5.060226576453905
+          ],
+          "values": [
+            0.1,
+            0.1,
+            0.6,
+            1.0,
+            1.0
+          ]
+        },
+        "parameters_count": 2
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9179944250034331,
+        "cv_se": 0.02184871270411327,
+        "family": "spline",
+        "fit_score": 0.9201960889849231,
+        "parameters": {
+          "coefficients": [
+            1.3651442877560789,
+            -1.8301579306039433,
+            1.4560856898608594,
+            -0.09707584637866896
+          ],
+          "scale": 0.8019497817658363,
+          "scale_min": 0.032419401709917486
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9208727516750947,
+        "cv_se": 0.01964510210048363,
+        "family": "spline",
+        "fit_score": 0.9208165964988501,
+        "parameters": {
+          "coefficients": [
+            -5.826754843710025,
+            6.998594773590916,
+            3.382463326911286,
+            -3.779380509658985
+          ],
+          "scale": 0.9348742085227351,
+          "scale_min": 0.06506487007771156
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9168366411368335,
+        "cv_se": 0.02006063082847171,
+        "family": "spline",
+        "fit_score": 0.9203038355367329,
+        "parameters": {
+          "coefficients": [
+            1.1541414539499306,
+            -1.2627720207937565,
+            0.8836523002790566,
+            0.07500185074850442
+          ],
+          "scale": 0.9999520088723111,
+          "scale_min": 0.0
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9060654380810885,
+        "cv_se": 0.01996193557971124,
+        "family": "spline",
+        "fit_score": 0.9039493053479758,
+        "parameters": {
+          "coefficients": [
+            0.00040338056462981925,
+            0.0010182219044764101,
+            0.0012024843723420788,
+            0.19999071061705498
+          ],
+          "scale": 99.79221638766235,
+          "scale_min": -0.08762751548177215
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9040169927980037,
+        "cv_se": 0.0202922433847683,
+        "family": "spline",
+        "fit_score": 0.9039483305530298,
+        "parameters": {
+          "coefficients": [
+            0.0006532922229575739,
+            0.0010009943326680488,
+            0.00041448388390907624,
+            0.199995119812524
+          ],
+          "scale": 74.34687594280834,
+          "scale_min": 0.06658259863912358
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.905964722857407,
+        "cv_se": 0.019950697494025282,
+        "family": "spline",
+        "fit_score": 0.9039482904449757,
+        "parameters": {
+          "coefficients": [
+            0.0006532922229575739,
+            0.0010009943326680488,
+            0.00041448388390907624,
+            0.199995119812524
+          ],
+          "scale": 126.27030045891371,
+          "scale_min": -3.253213742976125
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.9059641171969114,
+        "cv_se": 0.01995067959497081,
+        "family": "spline",
+        "fit_score": 0.9039480910778476,
+        "parameters": {
+          "coefficients": [
+            0.0006532922229575739,
+            0.0010009943326680488,
+            0.00041448388390907624,
+            0.199995119812524
+          ],
+          "scale": 244.2188834651854,
+          "scale_min": 0.0
+        },
+        "parameters_count": 3
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9201317631442119,
+        "cv_se": 0.020483715943092635,
+        "family": "logistic",
+        "fit_score": 0.92069674289275,
+        "parameters": {
+          "a": 5.508054403472434,
+          "scale": 0.8019497817658363,
+          "scale_min": 0.032419401709917486,
+          "tau": 0.5492362600365974
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "pbar_E",
+        "cv_mean": 0.9194243878154728,
+        "cv_se": 0.020512055584956824,
+        "family": "clipped_linear",
+        "fit_score": 0.9205070636615326,
+        "parameters": {
+          "a": 1.256421220882075,
+          "b": -0.24846946261912403,
+          "scale": 0.8019497817658363,
+          "scale_min": 0.032419401709917486
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9214230876269104,
+        "cv_se": 0.01960482078037278,
+        "family": "clipped_linear",
+        "fit_score": 0.9210224451385493,
+        "parameters": {
+          "a": 2.6568609823461116,
+          "b": -1.7948792464105534,
+          "scale": 0.9348742085227351,
+          "scale_min": 0.06506487007771156
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "Pesc_bar",
+        "cv_mean": 0.9210960176897645,
+        "cv_se": 0.01959712986068496,
+        "family": "logistic",
+        "fit_score": 0.9208675094763593,
+        "parameters": {
+          "a": 10.620489938508083,
+          "scale": 0.9348742085227351,
+          "scale_min": 0.06506487007771156,
+          "tau": 0.8683897120128646
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9185795458609647,
+        "cv_se": 0.020381275924814934,
+        "family": "clipped_linear",
+        "fit_score": 0.9195743396596562,
+        "parameters": {
+          "a": 2.1188211857018713,
+          "b": -1.204581634187046,
+          "scale": 0.9999520088723111,
+          "scale_min": 0.0
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "S_MP",
+        "cv_mean": 0.9187588092196811,
+        "cv_se": 0.020231375665782467,
+        "family": "logistic",
+        "fit_score": 0.9195294755015729,
+        "parameters": {
+          "a": 8.958284079201839,
+          "scale": 0.9999520088723111,
+          "scale_min": 0.0,
+          "tau": 0.7953818005620537
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9139303628914774,
+        "cv_se": 0.02117437240386387,
+        "family": "clipped_linear",
+        "fit_score": 0.9149428894058433,
+        "parameters": {
+          "a": 8.0,
+          "b": 0.13134330424536653,
+          "scale": 74.34687594280834,
+          "scale_min": 0.06658259863912358
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.912317920432575,
+        "cv_se": 0.021459378981887267,
+        "family": "clipped_linear",
+        "fit_score": 0.9129441078159468,
+        "parameters": {
+          "a": 8.0,
+          "b": 0.17052378678925792,
+          "scale": 99.79221638766235,
+          "scale_min": -0.08762751548177215
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.909944174620363,
+        "cv_se": 0.022039798287838693,
+        "family": "clipped_linear",
+        "fit_score": 0.9112813329985892,
+        "parameters": {
+          "a": 8.0,
+          "b": -0.07685673366441194,
+          "scale": 126.27030045891371,
+          "scale_min": -3.253213742976125
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.9091709001509672,
+        "cv_se": 0.021702119853843307,
+        "family": "clipped_linear",
+        "fit_score": 0.9101569534057857,
+        "parameters": {
+          "a": 8.0,
+          "b": 0.1636992154904708,
+          "scale": 244.2188834651854,
+          "scale_min": 0.0
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "dbar",
+        "cv_mean": 0.9055845698701405,
+        "cv_se": 0.02108295952469966,
+        "family": "logistic",
+        "fit_score": 0.9068065509638991,
+        "parameters": {
+          "a": 12.0,
+          "scale": 74.34687594280834,
+          "scale_min": 0.06658259863912358,
+          "tau": 8.725322645901796
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_P",
+        "cv_mean": 0.9050984904812158,
+        "cv_se": 0.021145058728123833,
+        "family": "logistic",
+        "fit_score": 0.9059719120574782,
+        "parameters": {
+          "a": 12.0,
+          "scale": 126.27030045891371,
+          "scale_min": -3.253213742976125,
+          "tau": 14.68956755128022
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "kappa_E",
+        "cv_mean": 0.9071668577923224,
+        "cv_se": 0.020819569895847524,
+        "family": "logistic",
+        "fit_score": 0.9057368585011747,
+        "parameters": {
+          "a": 11.172715610196525,
+          "scale": 99.79221638766235,
+          "scale_min": -0.08762751548177215,
+          "tau": 12.303979197417666
+        },
+        "parameters_count": 4
+      },
+      {
+        "covariate": "rho_NB",
+        "cv_mean": 0.9041381074651044,
+        "cv_se": 0.020721947335780193,
+        "family": "logistic",
+        "fit_score": 0.9053332757156589,
+        "parameters": {
+          "a": 11.165464505780626,
+          "scale": 244.2188834651854,
+          "scale_min": 0.0,
+          "tau": 30.322003665451284
+        },
+        "parameters_count": 4
+      }
+    ]
+  },
+  "statistical_plan": "two-sided Wilcoxon with Holm; instance and generator/network clustered bootstrap, 20,000 resamples",
+  "utc": "2026-11-02T20:25:56Z"
+}

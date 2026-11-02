@@ -14,12 +14,12 @@ from w1.instances import FAMILIES, ground_truth, make_synthetic
 
 
 def specs(panel):
-    fams = FAMILIES if panel == "test3" else ["er", "ba", "grid", "ws", "sbm"]
-    sizes = [100] if panel == "test3" else ([900] if panel == "scale3" else [2000, 5000])
-    reps = [6, 7] if panel == "test3" else [2]
+    fams = FAMILIES if panel in ("test3", "fit500") else ["er", "ba", "grid", "ws", "sbm"]
+    sizes = [100] if panel == "test3" else ([500] if panel == "fit500" else ([900] if panel == "scale3" else [2000, 5000]))
+    reps = [6, 7] if panel == "test3" else ([8, 9] if panel == "fit500" else [2])
     return [(fam, n, pr, prior, rep) for fam in fams for n in sizes
             for pr in ("R1", "R2", "R3", "R4", "R5")
-            for prior in (("uniform", "dir1") if panel == "test3" else ("uniform",))
+            for prior in (("uniform", "dir1") if panel in ("test3", "fit500") else ("uniform",))
             for rep in reps]
 
 
@@ -42,5 +42,5 @@ def main(panel):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("panel", choices=("test3", "scale3", "big2"))
+    ap.add_argument("panel", choices=("test3", "fit500", "scale3", "big2"))
     main(ap.parse_args().panel)

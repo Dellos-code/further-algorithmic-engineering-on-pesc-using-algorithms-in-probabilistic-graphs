@@ -8,7 +8,7 @@ from scipy.sparse.linalg import eigsh
 from w1.diffusion import knz_mp
 
 
-def rho_nb(inst, tol: float = 1e-12, maxit: int = 500) -> float:
+def rho_nb(inst, tol: float = 1e-12, maxit: int = 100) -> float:
     """Spectral radius of the p-weighted non-backtracking operator.
 
     The vector is indexed by directed edges u->v and the transition
@@ -23,36 +23,33 @@ def rho_nb(inst, tol: float = 1e-12, maxit: int = 500) -> float:
     src = np.concatenate((edges[:, 0], edges[:, 1]))
     dst = np.concatenate((edges[:, 1], edges[:, 0]))
     prob = np.concatenate((p, p))
-    incoming = [[] for _ in range(n)]
-    for k, (u, v) in enumerate(zip(src, dst)):
-        incoming[v].append(k)
     outgoing = [[] for _ in range(n)]
     for k, (u, v) in enumerate(zip(src, dst)):
         outgoing[u].append(k)
     rev = np.empty(2 * m, dtype=np.int64)
     rev[:m] = np.arange(m, 2 * m)
     rev[m:] = np.arange(m)
+    rows, cols, vals = [], [], []
+    for k, (_, v) in enumerate(zip(src, dst)):
+        choices = [h for h in outgoing[v] if h != rev[k]]
+        rows.extend([k] * len(choices))
+        cols.extend(choices)
+        vals.extend(prob[choices])
+    B = sp.csr_matrix((vals, (rows, cols)), shape=(2 * m, 2 * m))
     q = np.ones(2 * m, dtype=float)
     q /= np.linalg.norm(q)
     lam = 0.0
     for _ in range(maxit):
-        z = np.zeros_like(q)
-        for k, (u, v) in enumerate(zip(src, dst)):
-            total = 0.0
-            for h in outgoing[v]:
-                if h != rev[k]:
-                    total += prob[h] * q[h]
-            z[k] = total
+        z = B @ q
         norm = float(np.linalg.norm(z))
         if norm == 0.0:
             return 0.0
         z /= norm
-        new_lam = float(np.dot(z, np.asarray([sum(prob[h] * q[h] for h in outgoing[v] if h != rev[k])
-                                               for k, (u, v) in enumerate(zip(src, dst))])))
+        new_lam = float(np.linalg.norm(B @ z))
         if abs(new_lam - lam) <= tol * max(1.0, abs(new_lam)):
-            return abs(new_lam)
+            return abs(2.0 * new_lam)
         q, lam = z, new_lam
-    return abs(lam)
+    return abs(2.0 * lam)
 
 
 def covariates(inst) -> dict[str, float]:

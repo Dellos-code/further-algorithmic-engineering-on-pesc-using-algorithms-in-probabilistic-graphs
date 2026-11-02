@@ -53,3 +53,21 @@ the full confirmatory claim in the master protocol.
   `data_search_v2.json`, `data_search_log_v2.md`, `evidence_mode_v2.json`,
   and `split_v2.json`; evidence mode is synthetic with R=4. Previous
   checkpoint: `4b2d034`.
+
+- 2026-11-02T19:46:56Z — stage S computation note: the full `fit500`
+  covariate run was stopped after approximately two hours without a final
+  aggregate file because the exact Python non-backtracking iteration was the
+  bottleneck. To complete the pipeline, the committed `rho_nb` iteration cap
+  is reduced from 500 to 100 for the new fitting and held-out panels. This is
+  an explicit computational reduction and is reported as a deviation.
+
+- 2026-11-02T20:26:03Z — stage S complete: built the new `fit500` panel
+  (180 instances) and computed FIT curves/covariates for `fit500` and the
+  no-longer-blind `test3`. Stage V2 selection completed over the recorded
+  candidate families and covariates with grouped family CV and one-standard-
+  error tie breaking. Previous checkpoint: `b1d289b`.
+- 2026-11-02T20:26:03Z — stage V2 freeze prepared: selected `hard_gate` on
+  `pbar_E`, wrote `frozen_fusion_v2.json` and
+  `frozen_fusion_v2.sha256` (`2c3f5e7a8146590da5c20395ef11eb65f18f5f388c5db47d8b21f30420c49a2a`).
+  No `scale3`, `big2`, `oof`, or real-HOLD member/ground-truth computation
+  occurred before this checkpoint.
