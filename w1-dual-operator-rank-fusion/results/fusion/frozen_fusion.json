@@ -1,0 +1,30 @@
+{
+  "c0": 0.17500000000000002,
+  "covariate": "pbar_E",
+  "family": "clipped_linear",
+  "fit_panel": "dev",
+  "hard_gate_tau": 0.818155868914755,
+  "hold_panels": [
+    "cp/tree/barbell synthetic family hold"
+  ],
+  "hypotheses": [
+    "H1: F_g > W1",
+    "H2: F_g > F_c0",
+    "H3: F_g > MP2"
+  ],
+  "member_M": "w1.diffusion.knz_mp(inst, iters=2)[0]",
+  "member_W": "w1.algorithm.w1_scores(inst, w1.algorithm.W1)",
+  "parameters": {
+    "a": 2.0,
+    "b": -0.8528646460226418,
+    "scale": 0.8015541171153244,
+    "scale_min": 0.032815066360429364
+  },
+  "scores_yB": {
+    "clipped_linear": 0.9263941452742694,
+    "constant": 0.9162189291771824,
+    "hard_gate": 0.9245274193700601
+  },
+  "statistical_plan": "paired two-sided Wilcoxon with Holm; network/family clustered bootstrap",
+  "utc": "2026-11-01T00:00:00Z"
+}

@@ -1,0 +1,5 @@
+{
+  "mode": "synthetic",
+  "real_networks": 4,
+  "reason": "Four bundled NetworkX networks were obtained; external source search was recorded and no larger external collection was available in the baseline environment."
+}
