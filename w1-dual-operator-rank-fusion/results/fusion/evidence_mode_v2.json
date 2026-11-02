@@ -1,0 +1,12 @@
+{
+  "mode": "synthetic",
+  "real_networks": 4,
+  "primary_evidence": "synthetic HOLD panels",
+  "reason": "The exhaustive source and mirror attempts yielded no additional usable real-network files; four NetworkX networks were obtained.",
+  "networks": [
+    "karate",
+    "lesmis",
+    "davis",
+    "florentine"
+  ]
+}

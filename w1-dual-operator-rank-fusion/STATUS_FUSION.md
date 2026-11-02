@@ -46,3 +46,10 @@ the full confirmatory claim in the master protocol.
   environment. Previous checkpoint: `a497ade`.
 - Baseline reproduction gate: `test_algorithm.py` and `test_reproduction.py`,
   15 tests, passed in the pinned environment.
+
+- 2026-11-02T17:49:00Z — stage R complete: attempted the listed real-network
+  sources and mirrors with recorded commands, timestamps, HTTP status/error
+  text, and retained the four bundled NetworkX networks. Wrote
+  `data_search_v2.json`, `data_search_log_v2.md`, `evidence_mode_v2.json`,
+  and `split_v2.json`; evidence mode is synthetic with R=4. Previous
+  checkpoint: `4b2d034`.

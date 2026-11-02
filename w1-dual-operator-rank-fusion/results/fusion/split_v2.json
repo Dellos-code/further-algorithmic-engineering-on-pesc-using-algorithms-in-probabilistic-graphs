@@ -1,0 +1,26 @@
+{
+  "seed": 20261102,
+  "mode": "synthetic",
+  "fit_families": [
+    "er",
+    "ba",
+    "ws",
+    "grid",
+    "rect",
+    "sbm"
+  ],
+  "hold_families": [
+    "cp",
+    "tree",
+    "barbell"
+  ],
+  "real_fit": [
+    "karate",
+    "lesmis"
+  ],
+  "real_hold": [
+    "davis",
+    "florentine"
+  ],
+  "note": "The four bundled networks are recorded as available instances; synthetic mode is primary because R=4."
+}

@@ -1,0 +1,156 @@
+[
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "karate_club_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.karate_club_graph.html"
+  },
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "les_miserables_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.les_miserables_graph.html"
+  },
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "davis_southern_women_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.davis_southern_women_graph.html"
+  },
+  {
+    "licence": "BSD-3-Clause",
+    "outcome": "obtained",
+    "resource": "florentine_families_graph",
+    "source": "networkx",
+    "url": "https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.florentine_families_graph.html"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://snap.stanford.edu/data/",
+    "error": "curl: (6) Could not resolve host: snap.stanford.edu",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "SNAP",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://snap.stanford.edu/data/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://snap.stanford.edu/",
+    "error": "curl: (6) Could not resolve host: snap.stanford.edu",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "SNAP mirror",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://snap.stanford.edu/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://konect.cc/networks/",
+    "error": "curl: (6) Could not resolve host: konect.cc",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "KONECT",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://konect.cc/networks/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://konect.cc/",
+    "error": "curl: (6) Could not resolve host: konect.cc",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "KONECT mirror",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://konect.cc/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://networks.skewed.de/",
+    "error": "curl: (6) Could not resolve host: networks.skewed.de",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "Netzschleuder",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://networks.skewed.de/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://networkrepository.com/",
+    "error": "curl: (6) Could not resolve host: networkrepository.com",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "Network Repository",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://networkrepository.com/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://github.com/shchur/gnn-benchmark",
+    "error": "",
+    "http_status": "200",
+    "outcome": "reachable",
+    "source": "gnn-benchmark",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://github.com/shchur/gnn-benchmark"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://string-db.org/",
+    "error": "curl: (6) Could not resolve host: string-db.org",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "STRING",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://string-db.org/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://stringdb-downloads.org/",
+    "error": "curl: (6) Could not resolve host: stringdb-downloads.org",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "STRING download",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://stringdb-downloads.org/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://zenodo.org/",
+    "error": "curl: (6) Could not resolve host: zenodo.org",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "Zenodo",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://zenodo.org/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://figshare.com/",
+    "error": "curl: (6) Could not resolve host: figshare.com",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "Figshare",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://figshare.com/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://huggingface.co/datasets",
+    "error": "curl: (6) Could not resolve host: huggingface.co",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "Hugging Face datasets",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://huggingface.co/datasets"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://pytorch-geometric.readthedocs.io/",
+    "error": "curl: (6) Could not resolve host: pytorch-geometric.readthedocs.io",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "PyG",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://pytorch-geometric.readthedocs.io/"
+  },
+  {
+    "command": "curl -L --silent --show-error --head --max-time 20 https://igraph.org/python/",
+    "error": "curl: (6) Could not resolve host: igraph.org",
+    "http_status": "none",
+    "outcome": "not acquired",
+    "source": "igraph",
+    "started_utc": "2026-11-02T17:43:57Z",
+    "url": "https://igraph.org/python/"
+  }
+]
