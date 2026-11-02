@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from fusion.covariates import covariates, rho_nb
-from fusion.members import fusion_scores
+from fusion.members import fusion_scores, member_scores
 from w1.instances import Instance
 from w1.metrics import ranks_of
 
@@ -19,9 +19,9 @@ def inst(edges, p, n, x=None):
 
 def test_fusion_endpoints():
     a = inst([(0, 1), (1, 2)], [0.4, 0.6], 3)
-    assert np.array_equal(ranks_of(fusion_scores(a, 0)), ranks_of(fusion_scores(a, 0)))
-    assert np.array_equal(fusion_scores(a, 0), ranks_of(fusion_scores(a, 0)))
-    assert np.array_equal(fusion_scores(a, 1), ranks_of(fusion_scores(a, 1)))
+    members = member_scores(a)
+    assert np.array_equal(fusion_scores(a, 0), ranks_of(members["W1"]))
+    assert np.array_equal(fusion_scores(a, 1), ranks_of(members["MP2"]))
 
 
 def test_covariates_toy_values():
