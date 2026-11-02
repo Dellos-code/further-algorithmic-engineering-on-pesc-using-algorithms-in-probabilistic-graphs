@@ -1,0 +1,47 @@
+[
+  {
+    "kind": "syn",
+    "fam": "chung_lu",
+    "n": 500,
+    "pr": "R3",
+    "prior": "uniform",
+    "rep": 3,
+    "panel": "oof"
+  },
+  {
+    "kind": "syn",
+    "fam": "lfr",
+    "n": 500,
+    "pr": "R3",
+    "prior": "uniform",
+    "rep": 3,
+    "panel": "oof"
+  },
+  {
+    "kind": "syn",
+    "fam": "holme_kim",
+    "n": 500,
+    "pr": "R3",
+    "prior": "uniform",
+    "rep": 3,
+    "panel": "oof"
+  },
+  {
+    "kind": "syn",
+    "fam": "geometric",
+    "n": 500,
+    "pr": "R3",
+    "prior": "uniform",
+    "rep": 3,
+    "panel": "oof"
+  },
+  {
+    "kind": "syn",
+    "fam": "rmat",
+    "n": 500,
+    "pr": "R3",
+    "prior": "uniform",
+    "rep": 3,
+    "panel": "oof"
+  }
+]

@@ -121,6 +121,25 @@ def topology(kind: str, n: int, seed: int, **kw):
         m2 = n - 2 * m1
         G = nx.barbell_graph(m1, m2)
         info["m1"], info["m2"] = m1, m2
+    elif kind == "chung_lu":
+        weights = 2.0 + rng.pareto(2.5, n)
+        G = nx.expected_degree_graph(weights, selfloops=False, seed=s)
+    elif kind == "lfr":
+        G = nx.LFR_benchmark_graph(n, tau1=3.0, tau2=1.5, mu=0.1,
+                                   average_degree=5, min_community=20, seed=s)
+        G = nx.Graph(G)
+    elif kind == "holme_kim":
+        G = nx.powerlaw_cluster_graph(n, 2, 0.3, seed=s)
+    elif kind == "geometric":
+        G = nx.random_geometric_graph(n, 0.12, seed=s)
+    elif kind == "rmat":
+        edges = set()
+        for _ in range(max(n * 5, 1)):
+            u = int(rng.integers(n))
+            v = int(rng.integers(n))
+            if u != v:
+                edges.add(tuple(sorted((u, v))))
+        return canon_edges(list(edges)), n, {"generator": "R-MAT approximation"}
     else:
         raise ValueError(kind)
     E, nn = _nx_edges(G)
