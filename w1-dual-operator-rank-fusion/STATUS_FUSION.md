@@ -36,3 +36,13 @@ large `scale3`/`big2` panels, Monte Carlo cost curves, exploratory
 per-vertex fusion, and XeLaTeX zero-box validation remain explicit follow-up
 work. The stored fresh results therefore support a reproducible pilot, not
 the full confirmatory claim in the master protocol.
+
+## Part 1 — stage B checkpoint
+
+- 2026-11-02T17:43:11Z — stage B complete: recorded `ERRATA_FUSION.md`,
+  recomputed `confirm_test2.stats_v2.csv` and `confirm_test3.stats_v2.csv`
+  with all-instance means, two-sided Wilcoxon tests, Holm adjustment, and
+  20,000-resample instance/family bootstrap intervals; recorded the pinned
+  environment. Previous checkpoint: `a497ade`.
+- Baseline reproduction gate: `test_algorithm.py` and `test_reproduction.py`,
+  15 tests, passed in the pinned environment.
